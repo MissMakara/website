@@ -12,12 +12,18 @@
     <div class="navbar">
         <div class="container">
             <img src="img/logo.png" alt="logo" class="nav_logo"/>
-            <nav>
+            
+            <img src="img/favicon.png" alt="mobile menu" class="mobile_menu" id="mobile-cta"/>
+            
+            <nav class="nav_">
+                <img src=" " alt="exit button" id="mobile-exit-cta" class="mobile_menu_exit" />  -->
+                
                 <ul class="nav_links">
-                    <li class="current nav_item"><a href="#">Features</a></li>
-                    <li class="nav_item"><a href="#">Operations</a></li>
-                    <li class="nav_item"><a href="#">Products</a></li>
-                    <li class="nav_item contact_button"><a href="#">Contact us</a></li>
+                    <li class="current "><a href="#" class="nav_item">Home</a></li>
+                    <li> <a class="nav_item" href="#" >About us</a></li>
+                    <li> <a class="nav_item" href="#">Products</a></li>
+                    <li> <a class="nav_item" href="#">Features</a></li>
+                    <li class="contact_button"><a href="#" class="nav_item">Contact us</a></li>
 
                 </ul>
             </nav>
@@ -25,7 +31,7 @@
     </div>
 
     <section class="hero">
-        <div class="container">
+        <div class="container section1">
             <div class="left_col">
                 <p class="subhead">
                     It's Nitty &amp; Gritty
@@ -33,18 +39,20 @@
                 <h1>A Task App That Doesn't Stink</h1>
 
                 <div class="hero-cta">
-                    <a href="#" class="cta">Try For Free</a>
+                    <a href="#" class="primary-cta">Try For Free</a>
 
                 </div>             
             </div>
-            <img src="img/ai.jpg alt="image" class="hero_img"/>
+            <!-- <img src="img/ai.jpg alt="image" class="hero_img"/> -->
         </div>
 
     </section>
-    <section class="about">
-        <div class="container">
-            <p class="about_title">About Us</p>
+    <section class="about_section section">   
+        <h3 class="about_title">About Us </h3>
+        <div class="container section2">
+            <div class="about_left_col">
             <img src="img/ai.jpeg" alt="another photo" class="about_photo">
+            </div>
             <div class="about_right_col">
                 <p class="about_info"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
@@ -58,27 +66,27 @@
             </div>
         </div>
     </section>
-    <section class="products">
-        <div class="container">
-            <ul>
-                <li>
-                    <img src="" alt="web_development_photo" class="wed_photo"/>
+    <section class="products_section section">
+        <div class="container section3">
+            <ul class="products_list">
+                <li class="product">
+                    <img src="img/ai.jpg" alt="web_development_photo" class="web_photo"/>
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
                         laboris nisi ut aliquip ex ea commodo consequat.<br> 
                     </blockquote>
                 </li>
-                <li>
-                    <img src="" alt="web_development_photo" class="wed_photo"/>
+                <li class="product">
+                    <img src="img/ai.jpg" alt="web_development_photo" class="web_photo"/>
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
                         laboris nisi ut aliquip ex ea commodo consequat.<br> 
                     </blockquote>
                 </li>
-                <li>
-                    <img src="" alt="web_development_photo" class="wed_photo"/>
+                <li class="product">
+                    <img src="img/ai.jpg" alt="web_development_photo" class="web_photo"/>
                     <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
@@ -89,9 +97,26 @@
 
         </div>
     </section>
+    <section class="features_section section">
+        <div class="container section4">
+            <div class="features_left_col">
+                <ul class="features_list">
+                    <li class="feature">Unlimited texts</li>
+                    <li class="feature">SMS task reminders</li>
+                    <li class="feature">completions</li>
+                    <li class="feature">Social media announcements</li>
+                    <li class="feature">Real time collaboration</li>
+                    <li class="feature">Many more awesome features</li>
+                </ul>
+            </div>
+            <div class="features_img_div">
+                <img src="img/web.jpg" class="features_img" alt="people using computers"/>
+            </div>
+        </div>
+    </section>
 
-    <section class="contact">
-        <div class="container">
+    <section class="contact_section section">
+        <div class="container section5">
             <div class="contact_left">
                 <h2> Contact </h2>
 
