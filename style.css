@@ -50,6 +50,7 @@ li {
     width:66%;
     right:0;
     top:0;
+    background:#20272E;
     /* background:#20272E; */
     height: 100vh;
     padding:1em;
@@ -58,7 +59,7 @@ li {
 } 
 .nav_links{
     margin-top: 5em;
-    background:#20272E;
+
 }
 
 .nav_item{
@@ -176,8 +177,9 @@ h1{
     border-radius: 1em;
 }
 .features_section{
+   
     background: #f2f2f2;
-    color:#444444
+    color:#444444;
 }
 
 .features_img{
@@ -196,10 +198,11 @@ h1{
     margin-left: 1em;
     flex-shrink: 1;   
 }
-ul.features_list{
+.features_list{
     margin:0;
     padding-left: .1em;
-    /* display: grid; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     position:relative;
 
 }
@@ -222,6 +225,11 @@ li.feature{
 
 .features_img{
     display: none;
+}
+
+.contact_section{
+    background:#20272E;
+    color:white;
 }
 .contact_left{
     width: 50%;
@@ -263,4 +271,94 @@ input[type="submit"]{
     padding:.8em,2em;
     width:unset;
     cursor:pointer;
+}
+
+/* @media only screen and (min-width: 768px){ */
+@media only screen and (min-width: 900px){
+
+    .mobile_menu, .mobile_menu_exit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns:180px auto;
+       
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height:auto;
+        width:100%;
+        padding:0;
+
+    }
+    .nav_links{
+        display: flex;
+        margin-top: 2.5em;
+    }
+
+    .nav_item{
+        color: black;
+        font-size: 1.25em;
+        padding: .1em 1em;
+    }
+
+    .nav_{
+        margin:0;
+    }
+
+    .current{
+        font-weight: bold;
+    }
+
+    .contact_button{
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        border-radius: 5em;
+        font-weight: bold;
+        margin-top: -0.2em;
+        padding:0.17em 0.6em  0.17em 0.6em ;
+      
+    }
+    .contact_button:hover{
+        background-color: var(--primary-color);
+        color:white;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+    body{
+        margin:0;
+    }
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    .section4{
+        position: relative;
+    }
+    .features_img{
+        display: block;
+        position: absolute;
+        right:0;
+        width: 350px;
+       
+        bottom: -2em;
+    }
+
+    .products_list{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .product{
+        margin: 0 1em;
+    }
+
 }
