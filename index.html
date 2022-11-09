@@ -7,24 +7,25 @@
     <title>Bella Inc</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="navbar">
         <div class="container">
+            <img src="img/logo1.png" alt="logo" class="nav_logo_mobile"/>
             <img src="img/logo.png" alt="logo" class="nav_logo"/>
             
-            <img src="img/favicon.png" alt="mobile menu" class="mobile_menu" id="mobile-cta"/>
+            <img src="img/favicon.png" alt="mobile menu" class="mobile_menu" id="mobile_menu_"/>
             
-            <nav class="nav_">
-                <img src="img/exit.png" alt="exit button" id="mobile-exit-cta" class="mobile_menu_exit" />
+            <nav class="nav_" id="navigation">
+                <img src="img/exit.png" alt="exit button" id="mobile_exit" class="mobile_menu_exit"/>
                 
                 <ul class="nav_links">
-                    <li class="current "><a href="#hero" class="nav_item">Home</a></li>
-                    <li> <a class="nav_item" href="#about" >About us</a></li>
-                    <li> <a class="nav_item" href="#products">Products</a></li>
-                    <li> <a class="nav_item" href="#features">Features</a></li>
-                    <li ><a href="#" class="nav_item contact_button">Contact us</a></li>
-
+                    <li class="current"><a href="#hero" class="nav_item">Home</a></li>
+                    <li><a class="nav_item" href="#about" >About us</a></li>
+                    <li><a class="nav_item" href="#products">Products</a></li>
+                    <li><a class="nav_item" href="#features">Features</a></li>
+                    <li><a href="#" class="nav_item contact_button">Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,9 +35,9 @@
         <div class="container section1">
             <div class="left_col">
                 <p class="subhead">
-                    It's Nitty &amp; Gritty
+                    It's Convenient &amp; Reliable
                 </p>
-                <h1>A Task App That Doesn't Stink</h1>
+                <h1>Banking you wherever you go</h1>
 
                 <div class="hero-cta">
                     <a href="#" class="primary-cta">Try For Free</a>
@@ -110,7 +111,7 @@
                 </ul>
             </div>
             <div class="features_img_div">
-                <img src="img/ai2.jpeg" class="features_img" alt="people using computers"/>
+                <img src="img/ai2.jpg" class="features_img" alt="people using computers"/>
             </div>
         </div>
     </section>
@@ -118,9 +119,9 @@
     <section class="contact_section section">
         <div class="container section5">
             <div class="contact_left">
-                <h2> Contact </h2>
+                <h2 class="contact_title"> Contact </h2>
 
-                <form action="">
+                <form action="" class="form">
                     <ul>
                         <li>
                             <label for="name">Name</label>
@@ -146,12 +147,14 @@
 
             <div class="contact_right">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.848165168584!2d36.810035299999996!3d-1.2635443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1716161936e1%3A0xc1306eee01f9f775!2sMayfair%20Suites%2C%20Parklands%20Gardens%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1666957235101!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
             </div>
 
         </div>
     
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
